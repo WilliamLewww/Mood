@@ -1,0 +1,73 @@
+{
+	"build_systems":
+	[
+		{
+			"cmd":
+			[
+				"g++",
+				"C:/Projects/Mood/main.cpp",
+				"-o",
+				"C:/Projects/Mood/Mood",
+				"C:/Projects/Mood/engine.cpp",
+				"C:/Projects/Mood/src/*.cpp",
+				"C:/Projects/Mood/src/core/*.cpp",
+				"-IC:/Libraries/SDL2-2.0.8-mingw/i686-w64-mingw32/include",
+				"-LC:/Libraries/SDL2-2.0.8-mingw/i686-w64-mingw32/lib",
+				"-IC:/Libraries/bass24/c",
+				"-LC:/Libraries/bass24/c",
+				"-IC:/Libraries/bass_fx24/C",
+				"-LC:/Libraries/bass_fx24/C",
+				"-lbass",
+				"-lbass_fx",
+				"-lmingw32",
+				"-lSDL2main",
+				"-lSDL2",
+				"-lopengl32",
+				"-lws2_32",
+				"-lSDL2_ttf",
+				"&&",
+				"C:/Projects/Mood/Mood"
+			],
+			"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+			"name": "Mood",
+			"selector": "source.c, source.c++",
+			"variants":
+		    [
+		        {
+		            "name": "Compile Client",
+		            "cmd": [
+		            	"g++",
+						"C:/Projects/Mood/main.cpp",
+						"-o",
+						"C:/Projects/Mood/Mood",
+						"C:/Projects/Mood/engine.cpp",
+						"C:/Projects/Mood/src/*.cpp",
+						"C:/Projects/Mood/src/core/*.cpp",
+						"-IC:/Libraries/SDL2-2.0.8-mingw/i686-w64-mingw32/include",
+						"-LC:/Libraries/SDL2-2.0.8-mingw/i686-w64-mingw32/lib",
+						"-IC:/Libraries/bass24/c",
+						"-LC:/Libraries/bass24/c",
+						"-IC:/Libraries/bass_fx24/C",
+						"-LC:/Libraries/bass_fx24/C",
+						"-lbass",
+						"-lbass_fx",
+						"-lmingw32",
+						"-lSDL2main",
+						"-lSDL2",
+						"-lopengl32",
+						"-lws2_32",
+						"-lSDL2_ttf",
+					]
+		        }
+		    ],
+			"shell": true,
+			"working_dir": "${file_path}"
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	]
+}

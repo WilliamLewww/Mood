@@ -1,0 +1,2708 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"win",
+				"windowHeight"
+			],
+			[
+				"windo",
+				"windowHeight"
+			],
+			[
+				"wind",
+				"windowWidth"
+			],
+			[
+				"sce",
+				"getScreenHeight"
+			],
+			[
+				"cam",
+				"cameraPosition"
+			],
+			[
+				"get",
+				"getScreenWidth"
+			],
+			[
+				"third",
+				"thirdPersonTransformed"
+			],
+			[
+				"thir",
+				"thirdPersonTransformed"
+			],
+			[
+				"glP",
+				"glPopMatrix"
+			],
+			[
+				"wi",
+				"windowPosition"
+			],
+			[
+				"Vect",
+				"vector3"
+			],
+			[
+				"getS",
+				"getScreenHeight"
+			],
+			[
+				"wa",
+				"wallArray"
+			],
+			[
+				"w",
+				"windowHeight"
+			],
+			[
+				"data",
+				"datasList"
+			],
+			[
+				"dat",
+				"datasList"
+			],
+			[
+				"check",
+				"checkCollision"
+			],
+			[
+				"reg",
+				"registers"
+			],
+			[
+				"rand",
+				"randData"
+			],
+			[
+				"val",
+				"validRegisterB"
+			],
+			[
+				"velo",
+				"velocityY"
+			],
+			[
+				"colorRe",
+				"colorRegisterSelected"
+			],
+			[
+				"colorR",
+				"colorRegisterSelected"
+			],
+			[
+				"re",
+				"region"
+			],
+			[
+				"SDL",
+				"SDLK_LEFT"
+			],
+			[
+				"el",
+				"elapsedTimeSeconds"
+			],
+			[
+				"ve",
+				"velocityX"
+			],
+			[
+				"v",
+				"v_position"
+			],
+			[
+				"regi",
+				"registerContainer"
+			],
+			[
+				"add",
+				"addComma"
+			],
+			[
+				"color",
+				"colorRegisterSelected"
+			],
+			[
+				"colo",
+				"colorALUNull"
+			],
+			[
+				"registerCo",
+				"registerContainer"
+			],
+			[
+				"int",
+				"internalMemory"
+			],
+			[
+				"shie",
+				"shield"
+			],
+			[
+				"heal",
+				"healthWidth"
+			],
+			[
+				"dept",
+				"depth_charge_level"
+			],
+			[
+				"dep",
+				"depth_charge_level"
+			],
+			[
+				"exp",
+				"explosionPosition"
+			],
+			[
+				"ex",
+				"explosionHeight"
+			],
+			[
+				"expl",
+				"explosionPosition"
+			],
+			[
+				"explosi",
+				"explosionWidth"
+			],
+			[
+				"depth",
+				"depthCharge"
+			],
+			[
+				"getRe",
+				"getRectangleIndexAddr"
+			],
+			[
+				"in",
+				"initializeDepthCharge"
+			],
+			[
+				"initia",
+				"initializeDepthCharge"
+			],
+			[
+				"rip",
+				"riptide"
+			],
+			[
+				"e",
+				"explosionWidth"
+			],
+			[
+				"coold",
+				"cooldownsParent"
+			],
+			[
+				"initial",
+				"initializeRiptide"
+			],
+			[
+				"health",
+				"healthLittleTickCount"
+			],
+			[
+				"healthL",
+				"healthLargeTickCount"
+			],
+			[
+				"col",
+				"colorStatusBarHealth"
+			],
+			[
+				"colorS",
+				"colorStatusBarBackground"
+			],
+			[
+				"Stat",
+				"StatusBar"
+			],
+			[
+				"stats",
+				"statusBar"
+			],
+			[
+				"titans",
+				"titans_wrath_level"
+			],
+			[
+				"beg",
+				"begin"
+			],
+			[
+				"tita",
+				"titans_wrath_level"
+			],
+			[
+				"damageA",
+				"damageAbilities"
+			],
+			[
+				"initi",
+				"initializeTitansWrath"
+			],
+			[
+				"aut",
+				"auto_attack_current_frame"
+			],
+			[
+				"dred",
+				"dredge_line_level"
+			],
+			[
+				"dis",
+				"damageDisplayMap"
+			],
+			[
+				"abi",
+				"abilityHeight"
+			],
+			[
+				"vec",
+				"Vector2"
+			],
+			[
+				"sele",
+				"selectedEntity"
+			],
+			[
+				"selec",
+				"selectedRectangleIndex"
+			],
+			[
+				"hea",
+				"health"
+			],
+			[
+				"hook",
+				"hookedPosition"
+			],
+			[
+				"hoo",
+				"hookedHeight"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"anc",
+				"anchor"
+			],
+			[
+				"move",
+				"movementY"
+			],
+			[
+				"anco",
+				"anchorWidth"
+			],
+			[
+				"ancho",
+				"anchorWidth"
+			],
+			[
+				"anch",
+				"anchorWidth"
+			],
+			[
+				"scro",
+				"scrollDown"
+			],
+			[
+				"rai",
+				"railList"
+			],
+			[
+				"rail",
+				"railList"
+			],
+			[
+				"board",
+				"boardWidth"
+			],
+			[
+				"track",
+				"trackEditor"
+			],
+			[
+				"tur",
+				"turnRight"
+			],
+			[
+				"turn",
+				"turnLeft"
+			],
+			[
+				"tuto",
+				"tutorialColor1"
+			],
+			[
+				"end",
+				"endNode"
+			],
+			[
+				"tutoria",
+				"tutorialState"
+			],
+			[
+				"rees",
+				"reset"
+			],
+			[
+				"tutorial",
+				"tutorialEnd"
+			],
+			[
+				"tut",
+				"inTutorial"
+			],
+			[
+				"getTur",
+				"getTurnRadius"
+			],
+			[
+				"left",
+				"leftTruck"
+			],
+			[
+				"right",
+				"rightTruck"
+			],
+			[
+				"draw",
+				"drawing"
+			],
+			[
+				"font",
+				"fontList"
+			],
+			[
+				"pend",
+				"pendyLeft"
+			],
+			[
+				"pendy",
+				"pendyLeft"
+			],
+			[
+				"SDLK_",
+				"SDLK_RIGHT"
+			],
+			[
+				"pendySpee",
+				"pendySpeedV"
+			],
+			[
+				"pe",
+				"pendyLeft"
+			],
+			[
+				"ped",
+				"pendulumRight"
+			],
+			[
+				"ang",
+				"angle"
+			],
+			[
+				"posi",
+				"position"
+			],
+			[
+				"emp",
+				"emptyPosition"
+			],
+			[
+				"angle",
+				"angleList"
+			],
+			[
+				"nbo",
+				"nBoardList"
+			],
+			[
+				"hand",
+				"handleReply"
+			],
+			[
+				"cli",
+				"clientList"
+			],
+			[
+				"clie",
+				"clientExists"
+			],
+			[
+				"temp",
+				"tempClient"
+			],
+			[
+				"reci",
+				"recieveDataEndTime"
+			],
+			[
+				"posit",
+				"positionList"
+			],
+			[
+				"po",
+				"positionSpeed"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"positi",
+				"positionSpeed"
+			],
+			[
+				"angl",
+				"angleSpeed"
+			],
+			[
+				"an",
+				"angleList"
+			],
+			[
+				"fin",
+				"find_last_of"
+			],
+			[
+				"client",
+				"clientList"
+			],
+			[
+				"clien",
+				"clientList"
+			],
+			[
+				"uni",
+				"uniqueID"
+			],
+			[
+				"adv",
+				"advertList"
+			],
+			[
+				"repl",
+				"replyList"
+			],
+			[
+				"initialize",
+				"initializeWinsock"
+			],
+			[
+				"conn",
+				"connected"
+			],
+			[
+				"ini",
+				"initializeWinsock"
+			],
+			[
+				"getScree",
+				"getScreenHeight"
+			],
+			[
+				"avera",
+				"averageSquare"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/joiner.h",
+			"settings":
+			{
+				"buffer_size": 321,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/joiner.cpp",
+			"settings":
+			{
+				"buffer_size": 405,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/wall.h",
+			"settings":
+			{
+				"buffer_size": 105,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/third_person.h",
+			"settings":
+			{
+				"buffer_size": 299,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/third_person.cpp",
+			"settings":
+			{
+				"buffer_size": 473,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Mood",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Compile Client/Server",
+					""
+				],
+				[
+					"Compile Client/Server",
+					"Compile Client"
+				],
+				[
+					"Compile Client/Server",
+					"Compile Server"
+				],
+				[
+					"Compile Client/Server",
+					"Launch Client"
+				],
+				[
+					"Compile Client/Server",
+					"Launch Server"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Compile Client/Server",
+				"Launch Client"
+			]
+		],
+		[
+			[
+				[
+					"Mood",
+					""
+				],
+				[
+					"Mood",
+					"Compile Client"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Mood",
+				"Compile Client"
+			]
+		],
+		[
+			[
+				[
+					"Nautilus",
+					""
+				],
+				[
+					"Nautilus",
+					"Compile Client"
+				],
+				[
+					"Nautilus",
+					"Compile Server"
+				],
+				[
+					"Nautilus",
+					"Compile Client/Server"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Nautilus",
+				"Compile Client"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"SDL Project",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"SDL Project",
+				""
+			]
+		],
+		[
+			[
+				[
+					"SDL Project",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/Java Compile.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Java Run.sublime-build",
+					""
+				]
+			],
+			[
+				"SDL Project",
+				""
+			]
+		],
+		[
+			[
+				[
+					"SDL Project",
+					""
+				],
+				[
+					"SDL Project",
+					"Compile"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"SDL Project",
+				"Compile"
+			]
+		],
+		[
+			[
+				[
+					"SDL Project",
+					""
+				],
+				[
+					"SDL Project",
+					"Compile"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/Java Compile.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Java Run.sublime-build",
+					""
+				]
+			],
+			[
+				"SDL Project",
+				"Compile"
+			]
+		],
+		[
+			[
+				[
+					"SDL Project",
+					""
+				],
+				[
+					"SDL Project",
+					"Compile"
+				],
+				[
+					"SDL Project",
+					"Compile Server"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"SDL Project",
+				"Compile"
+			]
+		],
+		[
+			[
+				[
+					"SDL Project",
+					""
+				],
+				[
+					"SDL Project",
+					"Compile"
+				],
+				[
+					"SDL Project",
+					"Compile Server"
+				],
+				[
+					"SDL Project",
+					"Compile Client/Server"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"SDL Project",
+				"Compile"
+			]
+		],
+		[
+			[
+				[
+					"SDL Project",
+					""
+				],
+				[
+					"SDL Project",
+					"Compile"
+				],
+				[
+					"SDL Project",
+					"Run"
+				],
+				[
+					"SDL Project",
+					"Single File"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"SDL Project",
+				""
+			]
+		],
+		[
+			[
+				[
+					"SDL Project",
+					""
+				],
+				[
+					"SDL Project",
+					"gdb"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/Java Compile.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Java Run.sublime-build",
+					""
+				]
+			],
+			[
+				"SDL Project",
+				"gdb"
+			]
+		],
+		[
+			[
+				[
+					"Thane",
+					""
+				],
+				[
+					"Thane",
+					"Compile Client"
+				],
+				[
+					"Thane",
+					"Compile Server"
+				],
+				[
+					"Thane",
+					"Compile Client/Server"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Thane",
+				"Compile Client/Server"
+			]
+		],
+		[
+			[
+				[
+					"Visual-Computer",
+					""
+				],
+				[
+					"Visual-Computer",
+					"Compile Client"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Visual-Computer",
+				"Compile Client"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"a",
+				"Arithmetic"
+			],
+			[
+				"ari",
+				"Arithmetic"
+			],
+			[
+				"ar",
+				"Arithmetic"
+			],
+			[
+				"color sc",
+				"UI: Select Color Scheme"
+			],
+			[
+				"convert",
+				"Convert Case: Upper Case"
+			],
+			[
+				"caps",
+				"Convert Case: Upper Case"
+			],
+			[
+				"colorsc",
+				"UI: Select Color Scheme"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"colo",
+				"UI: Select Color Scheme"
+			],
+			[
+				"theme",
+				"Colorsublime: Browse Themes Online"
+			],
+			[
+				"ui",
+				"UI: Select Theme"
+			],
+			[
+				"colors",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"",
+				"BracketHighlighter: Enable Debug Mode"
+			],
+			[
+				"permu",
+				"Permute Lines: Unique"
+			],
+			[
+				"sort",
+				"Sort Lines"
+			],
+			[
+				"conver",
+				"Convert Case: Upper Case"
+			],
+			[
+				"convert to",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"spaces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"SORT",
+				"Sort Lines"
+			],
+			[
+				"shuff",
+				"Permute Lines: Shuffle"
+			],
+			[
+				"snippet",
+				"Snippet: template <typename ${1:_InputIter}>"
+			],
+			[
+				"font",
+				"Snippet: If Condition"
+			],
+			[
+				"tabs",
+				"View: Toggle Tabs"
+			],
+			[
+				"perm",
+				"Snippet: Enumeration"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"set syntax c++",
+				"Set Syntax: C++"
+			],
+			[
+				"set Syntax",
+				"Set Syntax: Textile"
+			],
+			[
+				"git",
+				"Set Syntax: Git Log"
+			],
+			[
+				"color sch",
+				"UI: Select Color Scheme"
+			],
+			[
+				"snipp",
+				"Snippet: Namespace"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"color s",
+				"UI: Select Color Scheme"
+			],
+			[
+				"install",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"colorsch",
+				"UI: Select Color Scheme"
+			],
+			[
+				"cololrs",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"git add",
+				"Git: Add All"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"git ",
+				"Git: Status"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git pull",
+				"Git: Pull"
+			],
+			[
+				"git pu",
+				"Git: Pull Using Rebase"
+			],
+			[
+				"git c",
+				"Git: Commit"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"hex",
+				"HexViewer: Toggle Hex View"
+			],
+			[
+				"git ad",
+				"Git: Add All"
+			],
+			[
+				"git p",
+				"Git: Pull"
+			],
+			[
+				"git commi",
+				"Git: Commit"
+			],
+			[
+				"git a",
+				"Git: Add All"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git add ",
+				"Git: Add All"
+			],
+			[
+				"git diff",
+				"Git: Diff All Files"
+			],
+			[
+				"git add all",
+				"Git: Add All"
+			],
+			[
+				"git his",
+				"Git: Commit history"
+			],
+			[
+				"git commit ",
+				"Git: Commit"
+			],
+			[
+				"git commit me",
+				"Set Syntax: Git Commit Message"
+			],
+			[
+				"git Co",
+				"Git: Commit"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"packet rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"linter",
+				"Preferences: SublimeLinter Settings – Default"
+			],
+			[
+				"lint",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"g",
+				"GitGutter: Support Info"
+			],
+			[
+				"remove p",
+				"Package Control: Remove Package"
+			],
+			[
+				"mat",
+				"Material Theme: Configuration"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"matr",
+				"Material Theme: Configuration"
+			]
+		],
+		"width": 420.0
+	},
+	"console":
+	{
+		"height": 826.0,
+		"history":
+		[
+			"trace",
+			"help",
+			"adf",
+			"std::string",
+			"<string>",
+			"help",
+			"cd..",
+			"move",
+			"wordCount",
+			"tree",
+			"trace",
+			"python",
+			"for (int x = 0; x > 10; x++)",
+			"sdt::",
+			"help",
+			"trace",
+			"gdb",
+			"rand()",
+			"rand",
+			"#import <stdlib.h>",
+			"git"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Projects/Mood",
+		"/C/Projects/Mood/src"
+	],
+	"file_history":
+	[
+		"/C/Projects/Mood/src/third_person.cpp",
+		"/C/Projects/Mood/src/core/drawing.cpp",
+		"/C/Projects/Mood/src/joiner.h",
+		"/C/Projects/Mood/src/third_person.h",
+		"/C/Projects/Mood/src/joiner.cpp",
+		"/C/Projects/Mood/engine.cpp",
+		"/C/Projects/Mood/src/wall.h",
+		"/C/Projects/Mood/src/core/drawing.h",
+		"/C/Projects/Mood/src/first_person.cpp",
+		"/C/Projects/Mood/src/first_person.h",
+		"/C/Projects/Mood/src/third_person_transformed.h",
+		"/C/Projects/Mood/src/third_person_transformed.cpp",
+		"/C/Projects/Mood/project.sublime-project",
+		"/C/Projects/Mood/src/wall.cpp",
+		"/C/Users/William/Desktop/yikes hellen",
+		"/C/Projects/Visual-Computer/src/cpu.cpp",
+		"/C/Projects/Visual-Computer/src/core/drawing.cpp",
+		"/C/Projects/Visual-Computer/src/core/drawing.h",
+		"/C/Projects/Visual-Computer/src/cpu.h",
+		"/C/Projects/Visual-Computer/src/datas.h",
+		"/C/Projects/Visual-Computer/src/joiner.h",
+		"/C/Projects/Visual-Computer/src/joiner.cpp",
+		"/C/Projects/Visual-Computer/src/datas.cpp",
+		"/C/Projects/Visual-Computer/src/core/timer.cpp",
+		"/C/Projects/Visual-Computer/src/core/timer.h",
+		"/C/Projects/Visual-Computer/src/core/input.h",
+		"/C/Projects/Visual-Computer/src/core/input.cpp",
+		"/C/Projects/Visual-Computer/project.sublime-project",
+		"/C/Projects/Visual-Computer/engine.cpp",
+		"/C/Projects/Visual-Computer/engine.h",
+		"/C/Projects/Visual-Computer/main.cpp",
+		"/C/Projects/Visual-Computer/src/register_example.cpp",
+		"/C/Projects/Visual-Computer/src/register_example.h",
+		"/C/Projects/Visual-Computer/src/basic_computer.h",
+		"/C/Projects/Visual-Computer/src/basic_computer.cpp",
+		"/C/Projects/Visual-Computer/src/core/configuration.cpp",
+		"/C/Projects/Visual-Computer/config.txt",
+		"/C/Projects/Nautilus/src/rectangle_index.h",
+		"/C/Projects/Nautilus/src/core/input.h",
+		"/C/Projects/Nautilus/src/camera.h",
+		"/C/Projects/Nautilus/src/core/drawing.cpp",
+		"/C/Projects/Nautilus/src/core/drawing.h",
+		"/C/Projects/Nautilus/src/world.cpp",
+		"/C/Projects/Nautilus/src/stats.h",
+		"/C/Projects/Nautilus/src/stats.cpp",
+		"/C/Projects/Nautilus/src/dummy.cpp",
+		"/C/Projects/Nautilus/src/dummy.h",
+		"/C/Projects/Nautilus/src/nautilus.cpp",
+		"/C/Projects/Nautilus/src/rectangle_index.cpp",
+		"/C/Projects/Nautilus/src/nautilus.h",
+		"/C/Projects/Nautilus/src/world.h",
+		"/C/Projects/Nautilus/project.sublime-project",
+		"/C/Projects/Nautilus/src/wall.h",
+		"/C/Projects/Nautilus/src/wall.cpp",
+		"/C/Projects/Nautilus/engine.cpp",
+		"/C/Projects/Nautilus/src/core/vector2.cpp",
+		"/C/Projects/Nautilus/src/core/vector2.h",
+		"/C/Projects/Nautilus/src/joiner.cpp",
+		"/C/Projects/Nautilus/src/gui.cpp",
+		"/C/Projects/Nautilus/src/gui.h",
+		"/C/Projects/Nautilus/src/joiner.h",
+		"/C/Projects/Nautilus/src/core/configuration.h",
+		"/C/Projects/Nautilus/src/melee_minion.h",
+		"/C/Projects/Nautilus/src/core/input.cpp",
+		"/C/Projects/Nautilus/engine.h",
+		"/C/Projects/Nautilus/config.txt",
+		"/C/Projects/Nautilus/src/core/gui.cpp",
+		"/C/Projects/Thane/src/joiner.h",
+		"/C/Projects/Thane/src/joiner.cpp",
+		"/C/Projects/Nautilus/main.cpp",
+		"/C/Projects/Thane/main.cpp",
+		"/C/Projects/Thane/engine.h",
+		"/C/Projects/Thane/engine.cpp",
+		"/C/Projects/Nautilus/src/main.cpp",
+		"/C/Projects/Thane/src/track/track_editor.cpp",
+		"/C/Projects/Thane/src/track/track_editor.h",
+		"/C/Projects/Thane/src/core/configuration.h",
+		"/C/Projects/Thane/src/core/input.h",
+		"/C/Projects/Thane/src/camera.h",
+		"/C/Projects/Thane/README.md",
+		"/C/Projects/Thane/src/core/input.cpp",
+		"/C/Projects/Thane/src/board/board.cpp",
+		"/C/Projects/Thane/src/board/board.h",
+		"/C/Projects/Thane/src/core/drawing.h",
+		"/C/Projects/Thane/src/environment/preset_models.cpp",
+		"/C/Projects/Thane/src/environment/preset_models.h",
+		"/C/Projects/Thane/src/world.cpp",
+		"/C/Projects/Thane/src/world.h",
+		"/C/Projects/Thane/src/scripted.h",
+		"/C/Projects/Thane/project.sublime-project",
+		"/C/Projects/Thane/src/track/track.cpp",
+		"/C/Projects/Thane/src/track/track.h",
+		"/C/Users/William/Desktop/Help.txt",
+		"/C/Projects/Thane/src/environment/environment.cpp",
+		"/C/Projects/Thane/src/board/truck.h",
+		"/C/Projects/Thane/src/track.h",
+		"/C/Projects/Thane/config.txt",
+		"/C/Users/William/Desktop/Finals.txt",
+		"/C/Projects/Thane/src/board/wheel_presets.h",
+		"/C/Projects/Thane/src/board/profile.h",
+		"/C/Projects/Thane/src/board/wheel.h",
+		"/C/Projects/Thane/src/tutorial_world.cpp",
+		"/C/Projects/Thane/src/board/truck.cpp",
+		"/C/Projects/Thane/src/bmp_polygon.cpp",
+		"/C/Projects/Thane/src/bmp_polygon.h",
+		"/C/Projects/Thane/src/core/drawing.cpp",
+		"/C/Users/William/Desktop/Thane 10.0.0/config.txt",
+		"/C/Libraries/SDL2_ttf-2.0.14/i686-w64-mingw32/include/SDL2/SDL_ttf.h",
+		"/C/Libraries/SDL2_ttf-2.0.14/README.txt",
+		"/C/Libraries/SDL2_ttf-2.0.14/external/freetype-2.4.12/README",
+		"/C/Libraries/SDL2_ttf-2.0.14/external/freetype-2.4.12/modules.cfg",
+		"/C/Libraries/SDL2_ttf-2.0.14/external/freetype-2.4.12/Makefile",
+		"/C/Libraries/SDL2_ttf-2.0.14/external/freetype-2.4.12/objs/README",
+		"/C/Users/William/AppData/Local/Temp/Temp1_SDL2_ttf-2.0.14-win32-x86.zip/README.txt",
+		"/C/Users/William/Downloads/23_freetype_fonts/LFont.cpp",
+		"/C/Users/William/Downloads/23_freetype_fonts/LFont.h",
+		"/C/Users/William/Downloads/23_freetype_fonts/LSpriteSheet.h",
+		"/C/Users/William/Downloads/23_freetype_fonts/LTexture.h",
+		"/C/Users/William/Downloads/23_freetype_fonts/LVertexData2D.h",
+		"/C/Users/William/Downloads/23_freetype_fonts/readme.txt",
+		"/C/Projects/Thane/src/core/shader.h",
+		"/C/Libraries/freetype-2.9.1/docs/INSTALL.UNIX",
+		"/C/Users/William/Downloads/make-4.2/README.W32",
+		"/C/Users/William/Downloads/freetype-2.9.1/docs/INSTALL.UNIX",
+		"/C/Users/William/Downloads/make-4.2/README",
+		"/C/Users/William/Downloads/freetype-2.9.1/docs/INSTALL",
+		"/C/Users/William/Downloads/freetype-2.9.1/builds/windows/w32-mingw32.mk",
+		"/C/Users/William/Downloads/freetype-2.9.1/Makefile"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 172.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ThirdPerson",
+			"VC",
+			"Visual-Computer"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/joiner.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								138,
+								138
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										137,
+										138
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										130,
+										131
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/joiner.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 405,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								385,
+								385
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										385,
+										386
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"region.yellowish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										375,
+										376
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/wall.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 105,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								102,
+								102
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										103,
+										104
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										52,
+										53
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/third_person.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 299,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								82,
+								82
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										51,
+										52
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										32,
+										33
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										81,
+										82
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										74,
+										75
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/third_person.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 473,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								366,
+								366
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										24,
+										25
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										9,
+										10
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										366,
+										367
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"region.yellowish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										350,
+										351
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 210.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 96.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "project.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"jo",
+				"src\\joiner.h"
+			],
+			[
+				"thi",
+				"src\\third_person.cpp"
+			],
+			[
+				"draw",
+				"src\\core\\drawing.cpp"
+			],
+			[
+				"",
+				"src\\third_person_transformed.cpp"
+			],
+			[
+				"th",
+				"src\\third_person.cpp"
+			],
+			[
+				"eng",
+				"engine.cpp"
+			],
+			[
+				"first",
+				"src\\first_person.cpp"
+			],
+			[
+				"fir",
+				"src\\first_person.h"
+			],
+			[
+				"joi",
+				"src\\joiner.cpp"
+			],
+			[
+				"e",
+				"engine.cpp"
+			],
+			[
+				"p",
+				"project.sublime-project"
+			],
+			[
+				"data",
+				"src\\datas.h"
+			],
+			[
+				"cp",
+				"src\\cpu.h"
+			],
+			[
+				"cpu.cp",
+				"src\\cpu.cpp"
+			],
+			[
+				"inp",
+				"src\\core\\input.h"
+			],
+			[
+				"ti",
+				"src\\core\\timer.h"
+			],
+			[
+				"in",
+				"src\\core\\input.h"
+			],
+			[
+				"cpu",
+				"src\\cpu.cpp"
+			],
+			[
+				"drw",
+				"src\\core\\drawing.h"
+			],
+			[
+				"pro",
+				"project.sublime-project"
+			],
+			[
+				"confi",
+				"src\\core\\configuration.cpp"
+			],
+			[
+				"nau",
+				"src\\nautilus.h"
+			],
+			[
+				"na",
+				"src\\nautilus.h"
+			],
+			[
+				"dumm",
+				"src\\dummy.h"
+			],
+			[
+				"re",
+				"src\\rectangle_index.h"
+			],
+			[
+				"du",
+				"src\\dummy.h"
+			],
+			[
+				"sta",
+				"src\\stats.cpp"
+			],
+			[
+				"stat",
+				"src\\stats.cpp"
+			],
+			[
+				"wo",
+				"src\\world.cpp"
+			],
+			[
+				"i",
+				"src\\core\\input.h"
+			],
+			[
+				"ca",
+				"src\\camera.h"
+			],
+			[
+				"n",
+				"src\\nautilus.cpp"
+			],
+			[
+				"recta",
+				"src\\rectangle_index.h"
+			],
+			[
+				"world",
+				"src\\world.cpp"
+			],
+			[
+				"wor",
+				"src\\world.cpp"
+			],
+			[
+				"dra",
+				"src\\core\\drawing.h"
+			],
+			[
+				"naut",
+				"src\\nautilus.h"
+			],
+			[
+				"en",
+				"engine.cpp"
+			],
+			[
+				"vec",
+				"src\\core\\vector2.h"
+			],
+			[
+				"gui",
+				"src\\gui.cpp"
+			],
+			[
+				"rect",
+				"src\\rectangle_index.cpp"
+			],
+			[
+				"conf",
+				"src\\core\\configuration.h"
+			],
+			[
+				"cm",
+				"src\\camera.h"
+			],
+			[
+				"boar",
+				"src\\board\\board.h"
+			],
+			[
+				"board",
+				"src\\board\\board.cpp"
+			],
+			[
+				"rea",
+				"README.md"
+			],
+			[
+				"config",
+				"src\\core\\configuration.h"
+			],
+			[
+				"camer",
+				"src\\camera.h"
+			],
+			[
+				"inpu",
+				"src\\core\\input.cpp"
+			],
+			[
+				"track",
+				"src\\track\\track_editor.cpp"
+			],
+			[
+				"tracke",
+				"src\\track\\track_editor.h"
+			],
+			[
+				"read",
+				"README.md"
+			],
+			[
+				"prof",
+				"src\\board\\profile.h"
+			],
+			[
+				"wheel",
+				"src\\board\\wheel_presets.h"
+			],
+			[
+				"profi",
+				"src\\board\\profile.h"
+			],
+			[
+				"whee",
+				"src\\board\\wheel.h"
+			],
+			[
+				"mai",
+				"main.cpp"
+			],
+			[
+				"main",
+				"main.cpp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 1000.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Projects\\Objective-Neural-Network\\project.sublime-project"
+			]
+		],
+		"width": 760.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 138.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
