@@ -5,13 +5,15 @@ Joiner joiner;
 void Joiner::initialize() {
 	wallCount = 1;
 	wallArray = new Wall[wallCount];
-	wallArray[0] = { Vector2(50, 50), Vector2(250, 250), 15 };
+	wallArray[0] = { Vector2(50, 50), Vector2(250, 250), 50 };
 
-	cameraPosition = Vector2(100, 200);
+	// cameraPosition = Vector2(100, 200);
+	cameraPosition = Vector2(0, 0);
 	cameraAngle = 0;
 
 	thirdPerson = ThirdPerson(&cameraPosition, &cameraAngle);
 	thirdPersonTranslated = ThirdPersonTranslated(&cameraPosition, &cameraAngle);
+	firstPerson = FirstPerson(&cameraPosition, &cameraAngle);
 }
 
 void Joiner::update() {
@@ -33,5 +35,7 @@ void Joiner::draw() {
 	thirdPerson.draw(wallArray, wallCount);
 	glViewport(0, 0, configuration.getScreenWidth() / 2, configuration.getScreenHeight() / 2);
 	thirdPersonTranslated.draw(wallArray, wallCount);
+	glViewport(configuration.getScreenWidth() / 2, 0, configuration.getScreenWidth() / 2, configuration.getScreenHeight() / 2);
+	firstPerson.draw(wallArray, wallCount);
 	glPopMatrix();
 }

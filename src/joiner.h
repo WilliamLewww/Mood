@@ -4,12 +4,14 @@
 #include "core/input.h"
 #include "third_person.h"
 #include "third_person_translated.h"
+#include "first_person.h"
 #include "wall.h"
 
 class Joiner {
 private:
 	ThirdPerson thirdPerson;
 	ThirdPersonTranslated thirdPersonTranslated;
+	FirstPerson firstPerson;
 
 	Wall* wallArray;
 	int wallCount;
