@@ -1,14 +1,15 @@
 #include "first_person.h"
 
 void FirstPerson::drawWall(Wall wall) {
+	getDistanceProjection(wall.pointA);
+}
+
+float FirstPerson::getDistanceProjection(Vector2 position) {
 	float s = sin(drawing.degreeToRadians(*cameraAngle));
 	float c = cos(drawing.degreeToRadians(*cameraAngle));
 
-	Vector2 tempWallPosition = wall.pointA - *cameraPosition;
-	tempWallPosition = Vector2((tempWallPosition.x * c) + (tempWallPosition.y * s),
-							   -(tempWallPosition.x * s) + (tempWallPosition.y * c));
-
-	tempWallPosition += *cameraPosition;
+	Vector2 tempPosition = position - *cameraPosition;
+	return ((tempPosition.x * c) - (tempPosition.y * s));
 }
 
 FirstPerson::FirstPerson() {
@@ -23,6 +24,7 @@ FirstPerson::FirstPerson(Vector2* cameraPosition, float* cameraAngle) {
 
 void FirstPerson::draw(Wall* wallArray, int wallCount) {
 	drawing.drawRectOutline(Vector2(0, 0), configuration.getScreenWidth(), configuration.getScreenHeight());
+
 	glPushMatrix();
 	glTranslatef((configuration.getScreenWidth() / 2.0) - cameraPosition->x, (configuration.getScreenHeight() / 2.0) - cameraPosition->y, 0);
 

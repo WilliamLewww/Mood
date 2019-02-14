@@ -10,6 +10,7 @@ private:
 	float* cameraAngle;
 
 	void drawWall(Wall wall);
+	float getDistanceProjection(Vector2 position);
 public:
 	FirstPerson();
 	FirstPerson(Vector2* cameraPosition, float* cameraAngle);

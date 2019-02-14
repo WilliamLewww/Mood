@@ -154,7 +154,6 @@ void Drawing::drawRectOutline(Vector2 position, int width, int height) {
 		Vector2(0, 1)
 	};
 
-	glMatrixMode(GL_MODELVIEW);
 	glPushMatrix();
 	glBegin(GL_LINE_LOOP);
 	glColor4f(1, 1, 1, 1);
@@ -178,7 +177,6 @@ void Drawing::drawRectOutline(Vector2 position, int width, int height, int color
 		Vector2(0, 1)
 	};
 
-	glMatrixMode(GL_MODELVIEW);
 	glPushMatrix();
 	glBegin(GL_LINE_LOOP);
 	glColor4f(convertColorFloatToRGB(color[0]), convertColorFloatToRGB(color[1]), convertColorFloatToRGB(color[2]), 1);
@@ -202,7 +200,6 @@ void Drawing::drawRectOutline(Vector2 position, int width, int height, double an
 		Vector2(0, 1)
 	};
 
-	glMatrixMode(GL_MODELVIEW);
 	glPushMatrix();
 	glTranslatef(position.x + (width / 2) - (configuration.getScreenWidth() / 2), position.y + (height / 2) - (configuration.getScreenHeight() / 2), 0);
 	glRotatef(-angle, 0, 0, 1);
@@ -250,7 +247,6 @@ void Drawing::drawRect(Vector2 position, int width, int height, double angle) {
 		Vector2(0, 1)
 	};
 
-	glMatrixMode(GL_MODELVIEW);
 	glPushMatrix();
 	glTranslatef(position.x + (width / 2) - (configuration.getScreenWidth() / 2), position.y + (height / 2) - (configuration.getScreenHeight() / 2), 0);
 	glRotatef(-angle, 0, 0, 1);
@@ -277,7 +273,6 @@ void Drawing::drawRect(Vector2 position, int width, int height, double angle, in
 		Vector2(0, 1)
 	};
 
-	glMatrixMode(GL_MODELVIEW);
 	glPushMatrix();
 	glTranslatef(position.x + (width / 2) - (configuration.getScreenWidth() / 2), position.y + (height / 2) - (configuration.getScreenHeight() / 2), 0);
 	glRotatef(-angle, 0, 0, 1);
@@ -304,7 +299,6 @@ void Drawing::drawRect(Vector2 position, int width, int height, double angle, in
 		Vector2(0, 1)
 	};
 
-	glMatrixMode(GL_MODELVIEW);
 	glPushMatrix();
 	glTranslatef(position.x + (width / 2) - (configuration.getScreenWidth() / 2), position.y + (height / 2) - (configuration.getScreenHeight() / 2), 0);
 	glRotatef(-angle, 0, 0, 1);
@@ -387,7 +381,6 @@ void Drawing::drawRect(Vector2 position, int width, int height, int color[3], do
 }
 
 void Drawing::drawLine(Vector2 a, Vector2 b) {
-	glMatrixMode(GL_MODELVIEW);
 	glBegin(GL_LINES);
 	glColor4f(1, 1, 1, 1);
 	glVertex2f(a.x - (configuration.getScreenWidth() / 2), a.y - (configuration.getScreenHeight() / 2));
@@ -417,7 +410,6 @@ void Drawing::drawLine(Vector2 position, int width, int thickness, int color[3],
 		Vector2(1, 0)
 	};
 
-	glMatrixMode(GL_MODELVIEW);
 	glPushMatrix();
 	glTranslatef(position.x - (configuration.getScreenWidth() / 2), position.y - (configuration.getScreenHeight() / 2), 0);
 	glRotatef(-angle, 0, 0, 1);
@@ -481,7 +473,6 @@ void Drawing::drawLineStrip(std::vector<Vector2> points, std::vector<Vector2> po
 }
 
 void Drawing::drawLineStrip(Vector2 position, double width, double height, std::vector<Vector2> vertices, double angle, int color[3]) {
-	glMatrixMode(GL_MODELVIEW);
 	glPushMatrix();
 	glTranslatef(position.x + (width / 2) - (configuration.getScreenWidth() / 2), position.y + (height / 2) - (configuration.getScreenHeight() / 2), 0);
 	glRotatef(-angle, 0, 0, 1);
@@ -519,7 +510,6 @@ void Drawing::drawPolygon(Vector2 position, std::vector<Vector2> vertices, int c
 }
 
 void Drawing::drawPolygon(Vector2 position, double width, double height, std::vector<Vector2> vertices, double angle, int color[3], int alpha) {
-	glMatrixMode(GL_MODELVIEW);
 	glPushMatrix();
 	glTranslatef(position.x + (width / 2) - (configuration.getScreenWidth() / 2), position.y + (height / 2) - (configuration.getScreenHeight() / 2), 0);
 	glRotatef(-angle, 0, 0, 1);
@@ -623,7 +613,6 @@ void Drawing::drawTriangle(Vector2 position, int width, int height, double angle
 		Vector2(0, 0),
 	};
 
-	glMatrixMode(GL_MODELVIEW);
 	glPushMatrix();
 	glTranslatef(position.x + (width / 2) - (configuration.getScreenWidth() / 2), position.y + (height / 2) - (configuration.getScreenHeight() / 2), 0);
 	glRotatef(-angle, 0, 0, 1);

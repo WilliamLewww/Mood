@@ -7,8 +7,7 @@ void Joiner::initialize() {
 	wallArray = new Wall[wallCount];
 	wallArray[0] = { Vector2(50, 50), Vector2(250, 250), 50 };
 
-	// cameraPosition = Vector2(100, 200);
-	cameraPosition = Vector2(0, 0);
+	cameraPosition = Vector2(100, 200);
 	cameraAngle = 0;
 
 	thirdPerson = ThirdPerson(&cameraPosition, &cameraAngle);
