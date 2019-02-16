@@ -16,6 +16,6 @@ void ThirdPerson::draw(Wall* wallArray, int wallCount) {
 	for (int x = 0; x < wallCount; x++) {
 		drawing.drawLine(wallArray[x].pointA, wallArray[x].pointB);
 	}
-	drawing.drawTriangle(*cameraPosition - Vector2(25.0 / 2.0, 25.0 / 2.0), 25, 25, *cameraAngle);
+	drawing.drawTriangle(*cameraPosition - Vector2(10.0 / 2.0, 10.0 / 2.0), 10, 10, *cameraAngle);
 	glPopMatrix();
 }

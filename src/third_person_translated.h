@@ -8,6 +8,8 @@ class ThirdPersonTranslated {
 private:
 	Vector2* cameraPosition;
 	float* cameraAngle;
+
+	void drawWall(Wall wall);
 public:
 	ThirdPersonTranslated();
 	ThirdPersonTranslated(Vector2* cameraPosition, float* cameraAngle);

@@ -3,11 +3,14 @@
 Joiner joiner;
 
 void Joiner::initialize() {
-	wallCount = 1;
+	wallCount = 4;
 	wallArray = new Wall[wallCount];
-	wallArray[0] = { Vector2(50, 50), Vector2(250, 250), 50 };
+	wallArray[0] = { Vector2(20, 20), Vector2(70, 20), 25 };
+	wallArray[1] = { Vector2(70, 20), Vector2(70, 70), 25 };
+	wallArray[2] = { Vector2(70, 70), Vector2(20, 70), 25 };
+	wallArray[3] = { Vector2(20, 70), Vector2(20, 20), 25 };
 
-	cameraPosition = Vector2(100, 200);
+	cameraPosition = Vector2(50, 50);
 	cameraAngle = 0;
 
 	thirdPerson = ThirdPerson(&cameraPosition, &cameraAngle);
@@ -19,13 +22,10 @@ void Joiner::update() {
 	if (input.checkKeyDown(SDLK_LEFT)) { cameraAngle += 1; }
 	if (input.checkKeyDown(SDLK_RIGHT)) { cameraAngle -= 1; }
 
-	if (input.checkKeyDown(SDLK_UP)) {
-		cameraPosition += Vector2(1.5 * cos(drawing.degreeToRadians(-cameraAngle)), 1.5 * sin(drawing.degreeToRadians(-cameraAngle)));
-	}
+	if (input.checkKeyDown(SDLK_UP)) { cameraPosition += Vector2(1.5 * cos(drawing.degreeToRadians(-cameraAngle)), 1.5 * sin(drawing.degreeToRadians(-cameraAngle))); }
+	if (input.checkKeyDown(SDLK_DOWN)) { cameraPosition -= Vector2(1.5 * cos(drawing.degreeToRadians(-cameraAngle)), 1.5 * sin(drawing.degreeToRadians(-cameraAngle))); }
 
-	if (input.checkKeyDown(SDLK_DOWN)) {
-		cameraPosition -= Vector2(1.5 * cos(drawing.degreeToRadians(-cameraAngle)), 1.5 * sin(drawing.degreeToRadians(-cameraAngle)));
-	}
+	firstPerson.update();
 }
 
 void Joiner::draw() {

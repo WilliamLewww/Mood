@@ -2,6 +2,7 @@
 #include "core/vector2.h"
 #include "core/drawing.h"
 #include "core/configuration.h"
+#include "core/input.h"
 #include "wall.h"
 
 class FirstPerson {
@@ -10,10 +11,10 @@ private:
 	float* cameraAngle;
 
 	void drawWall(Wall wall);
-	float getDistanceProjection(Vector2 position);
 public:
 	FirstPerson();
 	FirstPerson(Vector2* cameraPosition, float* cameraAngle);
 
+	void update();
 	void draw(Wall* wallArray, int wallCount);
 };
