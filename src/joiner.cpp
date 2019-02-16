@@ -3,12 +3,13 @@
 Joiner joiner;
 
 void Joiner::initialize() {
-	wallCount = 4;
+	std::vector<Vector2> positionList = file.getVerticesFromFile("map.data");
+
+	wallCount = positionList.size() / 2;
 	wallArray = new Wall[wallCount];
-	wallArray[0] = { Vector2(20, 20), Vector2(70, 20), 25 };
-	wallArray[1] = { Vector2(70, 20), Vector2(70, 70), 25 };
-	wallArray[2] = { Vector2(70, 70), Vector2(20, 70), 25 };
-	wallArray[3] = { Vector2(20, 70), Vector2(20, 20), 25 };
+	for (int x = 0; x < positionList.size(); x += 2) {
+		wallArray[x / 2] = { positionList[x], positionList[x + 1] };
+	}
 
 	cameraPosition = Vector2(50, 50);
 	cameraAngle = 0;

@@ -4,5 +4,4 @@
 struct Wall {
 	Vector2 pointA;
 	Vector2 pointB;
-	float height;
 };

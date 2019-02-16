@@ -1,18 +1,5 @@
 #include "file.h"
 
-void File::exportSplits(int seed, std::vector<float> splits, float finalTime) {
-	std::ofstream out(std::to_string(seed) + ".splits");
-
-	out << "Final Time: " << finalTime << "\n\n";
-	out << "Splits:\n";
-	for (int x = 0; x < splits.size(); x++) {
-		if (x == splits.size() - 1) { out << splits[x]; }
-		else { out << splits[x] << "\n"; }
-	}
-
-	out.close();
-}
-
 std::vector<Vector2> File::getVerticesFromFile(const char* filename) {
 	std::ifstream fin(filename);
 	std::vector<Vector2> vertices;
@@ -29,45 +16,6 @@ std::vector<Vector2> File::getVerticesFromFile(const char* filename) {
 	fin.close();
 
 	return vertices;
-}
-
-std::vector<std::vector<Vector2>> File::getVerticesFromFileFull(const char* filename) {
-	std::vector<std::vector<Vector2>> fullList;
-	std::vector<Vector2> vertexList;
-
-	Vector2 temp_vertex;
-
-	std::ifstream configFile(filename);
-	std::string lineFromFile;
-
-	std::string tempInt = "";
-
-	while (std::getline(configFile, lineFromFile)) {
-		temp_vertex = Vector2(-1, -1);
-
-		for (char ch : lineFromFile) {
-			if (ch != ' ') {
-				tempInt += ch;
-			}
-			else {
-				if (temp_vertex.y != -1) { vertexList.push_back(temp_vertex); temp_vertex = Vector2(-1, -1); }
-				if (temp_vertex.x == -1) { temp_vertex.x = std::stoi(tempInt); }
-				else { temp_vertex.y = std::stoi(tempInt); }
-
-				tempInt = "";
-			}
-		}
-
-		if (temp_vertex.x != -1 && temp_vertex.y != -1) {
-			vertexList.push_back(temp_vertex);
-		}
-
-		fullList.push_back(vertexList);
-		vertexList.clear();
-	}
-
-	configFile.close();
-	return fullList;
 }
 
 std::map<std::string, int> File::getConfigurationFromFile(const char* filename) {

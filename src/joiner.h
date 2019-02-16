@@ -2,6 +2,7 @@
 #include "core/configuration.h"
 #include "core/drawing.h"
 #include "core/input.h"
+#include "core/file.h"
 #include "third_person.h"
 #include "third_person_translated.h"
 #include "first_person.h"
