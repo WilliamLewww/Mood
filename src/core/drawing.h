@@ -50,6 +50,7 @@ public:
 	void drawLineStrip(std::vector<Vector2> points, std::vector<Vector2> pointsB, int color[3]);
 	void drawLineStrip(std::vector<Vector2> points, std::vector<Vector2> pointsB, int offset, int color[3], int alpha);
 	void drawLineStrip(Vector2 position, double width, double height, std::vector<Vector2> vertices, double angle, int color[3]);
+	void drawPolygon(std::vector<Vector2> points, int color[3]);
 	void drawPolygon(std::vector<Vector2> points, int color, int alpha);
 	void drawPolygon(std::vector<Vector2> points, int color[3], int alpha);
 	void drawPolygon(Vector2 position, std::vector<Vector2> vertices, int color[3], int alpha);

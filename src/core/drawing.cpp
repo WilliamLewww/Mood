@@ -487,6 +487,13 @@ void Drawing::drawLineStrip(Vector2 position, double width, double height, std::
 	glPopMatrix();
 }
 
+void Drawing::drawPolygon(std::vector<Vector2> points, int color[3]) {
+	glBegin(GL_POLYGON);
+	glColor4f(convertColorFloatToRGB(color[0]), convertColorFloatToRGB(color[1]), convertColorFloatToRGB(color[2]), 1);
+	for (int x = 0; x < points.size(); x++) { glVertex2f(points[x].x - (configuration.getScreenWidth() / 2), points[x].y - (configuration.getScreenHeight() / 2)); }
+	glEnd();
+}
+
 void Drawing::drawPolygon(std::vector<Vector2> points, int color, int alpha) {
 	glBegin(GL_POLYGON);
 	glColor4f(convertColorFloatToRGB(color), convertColorFloatToRGB(color), convertColorFloatToRGB(color), convertColorFloatToRGB(alpha));

@@ -18,6 +18,18 @@ std::vector<Vector2> File::getVerticesFromFile(const char* filename) {
 	return vertices;
 }
 
+std::vector<int> File::getColorsFromFile(const char* filename) {
+	std::ifstream fin(filename);
+	std::vector<int> color;
+
+	int x;
+	while (fin >> x) { color.push_back(x); }
+
+	fin.close();
+
+	return color;
+}
+
 std::map<std::string, int> File::getConfigurationFromFile(const char* filename) {
 	std::map<std::string, int> configurations;
 

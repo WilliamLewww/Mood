@@ -58,7 +58,24 @@
 						"-lws2_32",
 						"-lSDL2_ttf",
 					]
-		        }
+		        },
+		         {
+		            "name": "Compile Editor",
+		            "cmd": [
+		            	"g++",
+						"C:/Projects/Mood/editor/main.cpp",
+						"-o",
+						"C:/Projects/Mood/editor",
+						"-IC:/Libraries/SDL2-2.0.8-mingw/i686-w64-mingw32/include",
+						"-LC:/Libraries/SDL2-2.0.8-mingw/i686-w64-mingw32/lib",
+						"-lmingw32",
+						"-lSDL2main",
+						"-lSDL2",
+						"-lopengl32",
+						"-lws2_32",
+						"-lSDL2_ttf",
+					]
+		        },
 		    ],
 			"shell": true,
 			"working_dir": "${file_path}"

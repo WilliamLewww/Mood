@@ -1,5 +1,7 @@
 #include "first_person.h"
 
+int color[3] = { 255, 0, 0 };
+
 float crossMultiply(float x1, float y1, float x2, float y2) {
 	return (x1*y2) - (y1*x2);
 }
@@ -84,9 +86,7 @@ void FirstPerson::drawWall(Wall wall) {
 		float x1 = -tx1 * 120.0 / tz1, y1a = -(120.0 * 25.0) / tz1, y1b = (120.0 * 25.0) / tz1;
 		float x2 = -tx2 * 120.0 / tz2, y2a = -(120.0 * 25.0) / tz2, y2b = (120.0 * 25.0) / tz2;
 
-		drawing.drawLine(Vector2(x1, y1a), Vector2(x1, y1b));
-		drawing.drawLine(Vector2(x2, y2a), Vector2(x2, y2b));
-		drawing.drawLine(Vector2(x1, y1a), Vector2(x2, y2a));
-		drawing.drawLine(Vector2(x1, y1b), Vector2(x2, y2b));
+		std::vector<Vector2> polygonA = { Vector2(x1, y1a), Vector2(x2, y2a), Vector2(x2, y2b), Vector2(x1, y1b) };
+		drawing.drawPolygon(polygonA, wall.color);
 	}
 }

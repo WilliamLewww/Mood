@@ -4,11 +4,18 @@ Joiner joiner;
 
 void Joiner::initialize() {
 	std::vector<Vector2> positionList = file.getVerticesFromFile("map.data");
+	std::vector<int> colorList = file.getColorsFromFile("color.data");
 
 	wallCount = positionList.size() / 2;
 	wallArray = new Wall[wallCount];
 	for (int x = 0; x < positionList.size(); x += 2) {
 		wallArray[x / 2] = { positionList[x], positionList[x + 1] };
+	}
+
+	for (int x = 0; x < wallCount; x++) {
+		wallArray[x].color[0] = colorList[(x * 3)];
+		wallArray[x].color[1] = colorList[(x * 3) + 1];
+		wallArray[x].color[2] = colorList[(x * 3) + 2];
 	}
 
 	cameraPosition = Vector2(50, 50);
@@ -20,11 +27,11 @@ void Joiner::initialize() {
 }
 
 void Joiner::update() {
-	if (input.checkKeyDown(SDLK_LEFT)) { cameraAngle += 1; }
-	if (input.checkKeyDown(SDLK_RIGHT)) { cameraAngle -= 1; }
+	if (input.checkKeyDown(SDLK_LEFT)) { cameraAngle += speed * timer.getTimeSeconds(); }
+	if (input.checkKeyDown(SDLK_RIGHT)) { cameraAngle -= speed * timer.getTimeSeconds(); }
 
-	if (input.checkKeyDown(SDLK_UP)) { cameraPosition += Vector2(1.5 * cos(drawing.degreeToRadians(-cameraAngle)), 1.5 * sin(drawing.degreeToRadians(-cameraAngle))); }
-	if (input.checkKeyDown(SDLK_DOWN)) { cameraPosition -= Vector2(1.5 * cos(drawing.degreeToRadians(-cameraAngle)), 1.5 * sin(drawing.degreeToRadians(-cameraAngle))); }
+	if (input.checkKeyDown(SDLK_UP)) { cameraPosition += Vector2(cos(drawing.degreeToRadians(-cameraAngle)), sin(drawing.degreeToRadians(-cameraAngle))) * speed * timer.getTimeSeconds(); }
+	if (input.checkKeyDown(SDLK_DOWN)) { cameraPosition -= Vector2(cos(drawing.degreeToRadians(-cameraAngle)), sin(drawing.degreeToRadians(-cameraAngle))) * speed * timer.getTimeSeconds(); }
 
 	firstPerson.update();
 }

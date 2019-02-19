@@ -35,5 +35,5 @@ void ThirdPersonTranslated::drawWall(Wall wall) {
 	tx1 = (tx1 * s) - (ty1 * c);
 	tx2 = (tx2 * s) - (ty2 * c);
 
-	drawing.drawLine(Vector2(tx1, tz1), Vector2(tx2, tz2));
+	drawing.drawLine(Vector2(tx1, tz1), Vector2(tx2, tz2), wall.color);
 }

@@ -3,6 +3,7 @@
 #include "core/drawing.h"
 #include "core/input.h"
 #include "core/file.h"
+#include "core/timer.h"
 #include "third_person.h"
 #include "third_person_translated.h"
 #include "first_person.h"
@@ -19,6 +20,8 @@ private:
 
 	Vector2 cameraPosition;
 	float cameraAngle;
+
+	float speed = 100;
 public:
 	int seed;
 	
