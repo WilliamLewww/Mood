@@ -29,5 +29,3 @@ public:
 	void update();
 	void draw();
 };
-
-extern Joiner joiner;
