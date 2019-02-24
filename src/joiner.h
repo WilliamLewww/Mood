@@ -15,6 +15,7 @@ private:
 	ThirdPersonTranslated thirdPersonTranslated;
 	FirstPerson firstPerson;
 
+	WallNode rootNode;
 	Wall* wallArray;
 	int wallCount;
 

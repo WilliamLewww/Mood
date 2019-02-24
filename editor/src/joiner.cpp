@@ -1,7 +1,7 @@
 #include "joiner.h"
 
 std::ostream &operator<<(std::ostream &os, Wall const &wall) {
-	return os << "(" << wall.pointA << " | " << wall.pointB << ")";
+	return os << "(" << wall.pointA << "|" << wall.pointB << ")";
 }
 
 bool operator==(Wall a, Wall b) {
@@ -133,14 +133,46 @@ void printTree(WallNode* root, const std::string& prefix) {
     if (hasRight) {
         bool printStrand = (hasLeft && hasRight && (root->right->right != NULL || root->right->left != NULL));
         std::string newPrefix = prefix + (printStrand ? "|   " : "    ");
-        std::cout << root->right->splitter << std::endl;
+        std::cout << "F: " << root->right->splitter << std::endl;
         printTree(root->right, newPrefix);
     }
 
     if (hasLeft) {
-        std::cout << (hasRight ? prefix : "") << "----" << root->left->splitter << std::endl;
+        std::cout << (hasRight ? prefix : "") << "----" << "B: " << root->left->splitter << std::endl;
         printTree(root->left, prefix + "    ");
     }
+}
+
+void writeTreeFile(WallNode *node, std::ostream &os) {
+	if (node == nullptr) { os << "# "; } 
+	else {
+		os << node->splitter << " ";
+		writeTreeFile(node->left, os);
+		writeTreeFile(node->right, os);
+	}
+}
+
+WallNode* readBinaryTree(WallNode *node, std::ifstream &fin) {
+	std::string token;
+	fin >> token;
+
+	if (token == "#") { return nullptr; }
+	else {
+		token.erase(std::remove(token.begin(), token.end(), '('), token.end());
+		token.erase(std::remove(token.begin(), token.end(), ')'), token.end());
+
+		std::string pointAS = token.substr(0, token.find('|'));
+		std::string pointBS = token.substr(token.find('|') + 1);
+
+		Vector2 pointA = { std::stof(pointAS.substr(0, pointAS.find(','))), std::stof(pointAS.substr(pointAS.find(',') + 1)) };
+		Vector2 pointB = { std::stof(pointBS.substr(0, pointBS.find(','))), std::stof(pointBS.substr(pointBS.find(',') + 1)) };
+
+		node = new WallNode{{pointA, pointB}};
+		node->left = readBinaryTree(node->left, fin);
+	 	node->right = readBinaryTree(node->right, fin);
+	}
+
+	return node;
 }
 
 void Joiner::update() {
@@ -169,14 +201,6 @@ void Joiner::update() {
 	if (input.checkKeyDown(SDLK_k) && colorPickerColor[1] > 0) { colorPickerColor[1] -= 1; }
 	if (input.checkKeyDown(SDLK_p) && colorPickerColor[2] < 255) { colorPickerColor[2] += 1; }
 	if (input.checkKeyDown(SDLK_l) && colorPickerColor[2] > 0) { colorPickerColor[2] -= 1; }
-
-	if (input.checkGenerateBMPPress()) { 
-		rootNode = *generateBSPTreeList(wallList); 
-
-	    std::cout << rootNode.splitter << std::endl;
-	    printTree(&rootNode, "");
-	    std::cout << std::endl;
-	}
 
 	if (input.checkBackspacePress()) { importData(); }
 	if (input.checkReturnPress()) { exportData(); }
@@ -213,6 +237,13 @@ void Joiner::importData() {
 		wallList[x].color[1] = colorList[(x * 3) + 1];
 		wallList[x].color[2] = colorList[(x * 3) + 2];
 	}
+
+	std::ifstream tree("bsp_tree.data");
+	rootNode = *readBinaryTree(&rootNode, tree);
+
+	std::cout << rootNode.splitter << std::endl;
+    printTree(&rootNode, "");
+    std::cout << std::endl;
 }
 
 void Joiner::exportData() {
@@ -224,4 +255,13 @@ void Joiner::exportData() {
 	}
 
 	map.close(); color.close();
+
+	rootNode = *generateBSPTreeList(wallList); 
+
+    std::cout << rootNode.splitter << std::endl;
+    printTree(&rootNode, "");
+    std::cout << std::endl;
+
+    std::ofstream tree("bsp_tree.data");
+    writeTreeFile(&rootNode, tree);
 }

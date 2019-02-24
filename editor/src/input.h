@@ -8,7 +8,6 @@ private:
 	std::vector<SDL_Keycode> keyList;
 	bool backspacePress = false;
 	bool returnPress = false;
-	bool generateBMPPress = false;
 	int mouseX, mouseY;
 	bool leftClickPress = false;
 	bool rightClickPress = false;
@@ -25,8 +24,6 @@ public:
 	inline bool checkReturnPress() { return returnPress; };
 	inline bool checkLeftClickPress() { return leftClickPress; };
 	inline bool checkRightClickPress() { return rightClickPress; };
-
-	inline bool checkGenerateBMPPress() { return generateBMPPress; };
 };
 
 extern Input input;

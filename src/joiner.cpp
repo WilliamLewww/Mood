@@ -1,10 +1,15 @@
 #include "joiner.h"
 
-Joiner joiner;
-
 void Joiner::initialize() {
 	std::vector<Vector2> positionList = file.getVerticesFromFile("map.data");
 	std::vector<int> colorList = file.getColorsFromFile("color.data");
+
+	std::ifstream tree("bsp_tree.data");
+	rootNode = *readBinaryTree(&rootNode, tree);
+
+	std::cout << rootNode.splitter << std::endl;
+    printTree(&rootNode, "");
+    std::cout << std::endl;
 
 	wallCount = positionList.size() / 2;
 	wallArray = new Wall[wallCount];

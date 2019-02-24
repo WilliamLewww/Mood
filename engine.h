@@ -20,6 +20,8 @@ private:
 
 	SDL_SysWMinfo wmInfo;
 	HWND hwnd;
+
+	Joiner joiner;
 	
 	bool isRunning = true; 
 	int frameStart, frameEnd, deltaTime = 0;

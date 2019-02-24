@@ -7,7 +7,6 @@ void Input::refreshInput() {
 	returnPress = false;
 	leftClickPress = false;
 	rightClickPress = false;
-	generateBMPPress = false;
 }
 
 void Input::getTrigger(SDL_Event event) {
@@ -22,10 +21,7 @@ void Input::getTrigger(SDL_Event event) {
 			if (event.key.keysym.sym == SDLK_RETURN) {  returnPress = true; }
 			else {
 				if (event.key.keysym.sym == SDLK_BACKSPACE) { backspacePress = true; }
-				else {
-					if (event.key.keysym.sym == SDLK_b) { generateBMPPress = true; }
-					else { keyList.push_back(event.key.keysym.sym); }
-				}
+				else { keyList.push_back(event.key.keysym.sym); }
 			}
 		}
 	}

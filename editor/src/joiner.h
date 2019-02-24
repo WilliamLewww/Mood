@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
-#include <iomanip>
 #include <cmath>
+#include <fstream>
 #include <algorithm>
 #include "vector2.h"
 #include "input.h"
