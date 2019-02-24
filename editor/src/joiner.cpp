@@ -1,10 +1,17 @@
 #include "joiner.h"
 
-std::vector<WallNodeM> convertWallToWallNodeM(std::vector<Wall> wallList) {
-	std::vector<WallNodeM> tempList;
-	for (Wall wall : wallList) { tempList.push_back({wall}); }
+std::ostream &operator<<(std::ostream &os, Wall const &wall) {
+	return os << "(" << wall.pointA << " | " << wall.pointB << ")";
+}
 
-	return tempList;
+bool operator==(Wall a, Wall b) {
+	return (a.pointA.x == b.pointA.x && a.pointA.y == b.pointA.y &&
+			a.pointB.x == b.pointB.x && a.pointB.y == b.pointB.y);
+}
+
+bool operator!=(Wall a, Wall b) {
+	return (a.pointA.x != b.pointA.x || a.pointA.y != b.pointA.y ||
+			a.pointB.x != b.pointB.x || a.pointB.y != b.pointB.y);
 }
 
 Vector2 getLineIntersection(Vector2 pointA, Vector2 pointB, Vector2 pointC, Vector2 pointD) {
@@ -32,28 +39,76 @@ std::vector<Wall> splitWall(Wall parentWall, Wall wall) {
 	return splitList;
 }
 
-WallNodeM generateBSPTreeList(std::vector<Wall> wallList) {
-	WallNodeM nodeRoot;
-	std::vector<WallNodeM> rNodeList = convertWallToWallNodeM(wallList);
-
-	nodeRoot.splitter = rNodeList[0].splitter;
-	rNodeList.erase(rNodeList.begin());
-
-	std::vector<WallNodeM> additionalNodes;
-	for (int x = 0; x < rNodeList.size(); x++) {
-		std::vector<Wall> t = splitWall(nodeRoot.splitter, rNodeList[x].splitter);
-		if (t.size() > 0) {
-			additionalNodes.push_back({t[0]});
-			additionalNodes.push_back({t[1]});
-			rNodeList.erase(rNodeList.begin() + x);
-			x -= 1;
-		}
+WallPosition getWallPosition(Wall parentWall, Wall wall) {
+	float slope = (parentWall.pointB.y - parentWall.pointA.y) /  (parentWall.pointB.x - parentWall.pointA.x);
+	float yInt = parentWall.pointA.y + (-slope * parentWall.pointA.x);
+	
+	if (wall.pointA.y > (slope * wall.pointA.x) + yInt) {
+		return WALL_FRONT;
 	}
 
-	std::copy(additionalNodes.begin(), additionalNodes.end(), std::back_inserter(rNodeList));
-	std::cout << rNodeList.size() << std::endl;
+	return WALL_BACK;
+}
 
-	return nodeRoot;
+void splitAndPlaceWalls(std::vector<WallNodeM*> newWallList, WallNodeM *rootNode) {
+	// split all walls and place it into the new master list
+	std::vector<WallNodeM*> additionalWalls;
+	for (int x = 0; x < newWallList.size(); x++) {
+		if (rootNode->splitter != newWallList[x]->splitter) {
+			std::vector<Wall> t = splitWall(rootNode->splitter, newWallList[x]->splitter);
+			if (t.size() > 0) {
+				additionalWalls.push_back(new WallNodeM{t[0]});
+				additionalWalls.push_back(new WallNodeM{t[1]});
+				newWallList.erase(newWallList.begin() + x);
+				x -= 1;
+			}
+		}
+	}
+	std::copy(additionalWalls.begin(), additionalWalls.end(), std::back_inserter(newWallList));
+
+	// place walls into front(right) or back(left) list
+	for (WallNodeM *wallNode : newWallList) {
+		if (rootNode->splitter != wallNode->splitter) {
+			if (getWallPosition(rootNode->splitter, wallNode->splitter) == WALL_FRONT) { rootNode->right.push_back(new WallNodeM{wallNode->splitter}); }
+			else { rootNode->left.push_back(new WallNodeM{wallNode->splitter}); }
+		}
+	}
+	newWallList.clear();
+}
+
+WallNode* propagateTreeInOrderR(WallNodeM *nodeM) {
+	WallNode *tempNode = new WallNode{nodeM->splitter};
+	if (nodeM->right.size() > 1) {
+		std::vector<WallNodeM*> newWallList = nodeM->right;
+		WallNodeM* rootNode = {nodeM->right[0]};
+
+		splitAndPlaceWalls(newWallList, rootNode);
+		nodeM->right.clear();
+		nodeM->right.push_back(rootNode);
+	}
+
+    if (nodeM->left.size() > 1) {
+    	std::vector<WallNodeM*> newWallList = nodeM->left;
+		WallNodeM* rootNode = {nodeM->left[0]};
+
+		splitAndPlaceWalls(newWallList, rootNode);
+		nodeM->left.clear();
+		nodeM->left.push_back(rootNode);
+    }
+
+    if (nodeM->right.size() > 0) { tempNode->right = propagateTreeInOrderR(nodeM->right[0]); }
+    if (nodeM->left.size() > 0) { tempNode->left = propagateTreeInOrderR(nodeM->left[0]); }
+
+    return tempNode;
+}
+
+WallNode* generateBSPTreeList(std::vector<Wall> wallList) {
+	std::vector<WallNodeM*> newWallList;
+	for (Wall wall : wallList) { newWallList.push_back(new WallNodeM{wall}); }
+	WallNodeM* rootNode = {newWallList[0]};
+	splitAndPlaceWalls(newWallList, rootNode);
+
+	return propagateTreeInOrderR(rootNode);
 }
 
 float getDistance(Vector2 pointA, Vector2 pointB) {
@@ -61,6 +116,32 @@ float getDistance(Vector2 pointA, Vector2 pointB) {
 }
 
 void Joiner::initialize() { }
+
+// Thanks Valiano (https://stackoverflow.com/a/50650932/3269446)
+void printTree(WallNode* root, const std::string& prefix) {
+    if (root == NULL) { return; }
+
+    bool hasLeft = (root->left != NULL);
+    bool hasRight = (root->right != NULL);
+
+    if (!hasLeft && !hasRight) { return; }
+
+    std::cout << prefix;
+    std::cout << ((hasLeft  && hasRight) ? "----" : "");
+    std::cout << ((!hasLeft && hasRight) ? "----" : "");
+
+    if (hasRight) {
+        bool printStrand = (hasLeft && hasRight && (root->right->right != NULL || root->right->left != NULL));
+        std::string newPrefix = prefix + (printStrand ? "|   " : "    ");
+        std::cout << root->right->splitter << std::endl;
+        printTree(root->right, newPrefix);
+    }
+
+    if (hasLeft) {
+        std::cout << (hasRight ? prefix : "") << "----" << root->left->splitter << std::endl;
+        printTree(root->left, prefix + "    ");
+    }
+}
 
 void Joiner::update() {
 	if (input.checkLeftClickPress()) {
@@ -89,7 +170,13 @@ void Joiner::update() {
 	if (input.checkKeyDown(SDLK_p) && colorPickerColor[2] < 255) { colorPickerColor[2] += 1; }
 	if (input.checkKeyDown(SDLK_l) && colorPickerColor[2] > 0) { colorPickerColor[2] -= 1; }
 
-	if (input.checkGenerateBMPPress()) { generateBSPTreeList(wallList); }
+	if (input.checkGenerateBMPPress()) { 
+		rootNode = *generateBSPTreeList(wallList); 
+
+	    std::cout << rootNode.splitter << std::endl;
+	    printTree(&rootNode, "");
+	    std::cout << std::endl;
+	}
 
 	if (input.checkBackspacePress()) { importData(); }
 	if (input.checkReturnPress()) { exportData(); }

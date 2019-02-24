@@ -1,11 +1,14 @@
 #pragma once
 #include <iostream>
+#include <iomanip>
 #include <cmath>
 #include <algorithm>
 #include "vector2.h"
 #include "input.h"
 #include "drawing.h"
 #include "file.h"
+
+enum WallPosition { WALL_FRONT, WALL_BACK };
 
 struct Wall {
 	Vector2 pointA = { -1, -1 };
@@ -17,19 +20,20 @@ struct Wall {
 struct WallNodeM {
 	Wall splitter;
 
-	std::vector<WallNodeM> left;
-	std::vector<WallNodeM> right;
+	std::vector<WallNodeM*> left;
+	std::vector<WallNodeM*> right;
 };
 
 struct WallNode {
 	Wall splitter;
 
-	WallNode* left;
-	WallNode* right;
+	WallNode* left = nullptr;
+	WallNode* right = nullptr;
 };
 
 class Joiner {
 private:
+	WallNode rootNode;
 	std::vector<Wall> wallList;
 	Wall tempWall;
 
