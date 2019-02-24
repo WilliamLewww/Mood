@@ -90,3 +90,27 @@ void FirstPerson::drawWall(Wall wall) {
 		drawing.drawPolygon(polygonA, wall.color);
 	}
 }
+
+void FirstPerson::drawUsingBSP(WallNode *rootNode) {
+	drawing.drawRectOutline(Vector2(0, 0), configuration.getScreenWidth(), configuration.getScreenHeight());
+
+	glPushMatrix();
+	glTranslatef((configuration.getScreenWidth() / 2.0), (configuration.getScreenHeight() / 2.0), 0);
+	iterateBSPTree(rootNode);
+	glPopMatrix();
+}
+
+//right(front) left(back)
+void FirstPerson::iterateBSPTree(WallNode *node) {
+    if(node == nullptr) { return; }
+    if (getWallPosition(node->splitter, *cameraPosition) == WALL_FRONT) { 
+    	iterateBSPTree(node->left);
+    	drawWall(node->splitter);
+    	iterateBSPTree(node->right); 
+    }
+    else { 
+    	iterateBSPTree(node->right);
+    	drawWall(node->splitter);
+    	iterateBSPTree(node->left);
+    }
+}

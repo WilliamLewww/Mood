@@ -1,7 +1,7 @@
 #include "joiner.h"
 
 std::ostream &operator<<(std::ostream &os, Wall const &wall) {
-	return os << "(" << wall.pointA << "|" << wall.pointB << ")";
+	return os << "(" << wall.pointA << "|" << wall.pointB << ")" << ":" << wall.color[0] << "," << wall.color[1] << "," << wall.color[2];
 }
 
 bool operator==(Wall a, Wall b) {
@@ -76,7 +76,7 @@ void splitAndPlaceWalls(std::vector<WallNodeM*> newWallList, WallNodeM *rootNode
 	newWallList.clear();
 }
 
-WallNode* propagateTreeInOrderR(WallNodeM *nodeM) {
+WallNode* propagateTreePreOrderR(WallNodeM *nodeM) {
 	WallNode *tempNode = new WallNode{nodeM->splitter};
 	if (nodeM->right.size() > 1) {
 		std::vector<WallNodeM*> newWallList = nodeM->right;
@@ -96,8 +96,8 @@ WallNode* propagateTreeInOrderR(WallNodeM *nodeM) {
 		nodeM->left.push_back(rootNode);
     }
 
-    if (nodeM->right.size() > 0) { tempNode->right = propagateTreeInOrderR(nodeM->right[0]); }
-    if (nodeM->left.size() > 0) { tempNode->left = propagateTreeInOrderR(nodeM->left[0]); }
+    if (nodeM->right.size() > 0) { tempNode->right = propagateTreePreOrderR(nodeM->right[0]); }
+    if (nodeM->left.size() > 0) { tempNode->left = propagateTreePreOrderR(nodeM->left[0]); }
 
     return tempNode;
 }
@@ -108,7 +108,7 @@ WallNode* generateBSPTreeList(std::vector<Wall> wallList) {
 	WallNodeM* rootNode = {newWallList[0]};
 	splitAndPlaceWalls(newWallList, rootNode);
 
-	return propagateTreeInOrderR(rootNode);
+	return propagateTreePreOrderR(rootNode);
 }
 
 float getDistance(Vector2 pointA, Vector2 pointB) {
@@ -167,7 +167,14 @@ WallNode* readBinaryTree(WallNode *node, std::ifstream &fin) {
 		Vector2 pointA = { std::stof(pointAS.substr(0, pointAS.find(','))), std::stof(pointAS.substr(pointAS.find(',') + 1)) };
 		Vector2 pointB = { std::stof(pointBS.substr(0, pointBS.find(','))), std::stof(pointBS.substr(pointBS.find(',') + 1)) };
 
-		node = new WallNode{{pointA, pointB}};
+		token = token.substr(token.find(':') + 1);
+		int colorR = std::stoi(token.substr(0, token.find(',')));
+		token = token.substr(token.find(',') + 1);
+		int colorG = std::stoi(token.substr(0, token.find(',')));
+		token = token.substr(token.find(',') + 1);
+		int colorB = std::stoi(token);
+
+		node = new WallNode{{pointA, pointB, {colorR, colorG, colorB}}};
 		node->left = readBinaryTree(node->left, fin);
 	 	node->right = readBinaryTree(node->right, fin);
 	}

@@ -11,10 +11,12 @@ private:
 	float* cameraAngle;
 
 	void drawWall(Wall wall);
+	void iterateBSPTree(WallNode *node);
 public:
 	FirstPerson();
 	FirstPerson(Vector2* cameraPosition, float* cameraAngle);
 
 	void update();
 	void draw(Wall* wallArray, int wallCount);
+	void drawUsingBSP(WallNode *rootNode);
 };

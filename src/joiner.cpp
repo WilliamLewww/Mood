@@ -48,6 +48,7 @@ void Joiner::draw() {
 	glViewport(0, 0, configuration.getScreenWidth() / 2, configuration.getScreenHeight() / 2);
 	thirdPersonTranslated.draw(wallArray, wallCount);
 	glViewport(configuration.getScreenWidth() / 2, 0, configuration.getScreenWidth() / 2, configuration.getScreenHeight() / 2);
-	firstPerson.draw(wallArray, wallCount);
+	//firstPerson.draw(wallArray, wallCount);
+	firstPerson.drawUsingBSP(&rootNode);
 	glPopMatrix();
 }
