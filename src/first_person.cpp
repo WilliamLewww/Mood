@@ -100,7 +100,6 @@ void FirstPerson::drawUsingBSP(WallNode *rootNode) {
 	glPopMatrix();
 }
 
-//right(front) left(back)
 void FirstPerson::iterateBSPTree(WallNode *node) {
     if(node == nullptr) { return; }
     if (getWallPosition(node->splitter, *cameraPosition) == WALL_FRONT) { 

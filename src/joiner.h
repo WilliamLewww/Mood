@@ -6,6 +6,7 @@
 #include "core/timer.h"
 #include "third_person.h"
 #include "third_person_translated.h"
+#include "third_person_bsp.h"
 #include "first_person.h"
 #include "wall.h"
 
@@ -13,6 +14,7 @@ class Joiner {
 private:
 	ThirdPerson thirdPerson;
 	ThirdPersonTranslated thirdPersonTranslated;
+	ThirdPersonBSP thirdPersonBSP;
 	FirstPerson firstPerson;
 
 	WallNode rootNode;

@@ -28,6 +28,7 @@ void Joiner::initialize() {
 
 	thirdPerson = ThirdPerson(&cameraPosition, &cameraAngle);
 	thirdPersonTranslated = ThirdPersonTranslated(&cameraPosition, &cameraAngle);
+	thirdPersonBSP = ThirdPersonBSP(&cameraPosition, &cameraAngle);
 	firstPerson = FirstPerson(&cameraPosition, &cameraAngle);
 }
 
@@ -47,8 +48,10 @@ void Joiner::draw() {
 	thirdPerson.draw(wallArray, wallCount);
 	glViewport(0, 0, configuration.getScreenWidth() / 2, configuration.getScreenHeight() / 2);
 	thirdPersonTranslated.draw(wallArray, wallCount);
+	glViewport(configuration.getScreenWidth() / 2, configuration.getScreenHeight() / 2, configuration.getScreenWidth() / 2, configuration.getScreenHeight() / 2);
+	thirdPersonBSP.draw(&rootNode);
 	glViewport(configuration.getScreenWidth() / 2, 0, configuration.getScreenWidth() / 2, configuration.getScreenHeight() / 2);
-	//firstPerson.draw(wallArray, wallCount);
-	firstPerson.drawUsingBSP(&rootNode);
+	if (input.checkKeyDown(SDLK_SPACE)) { firstPerson.draw(wallArray, wallCount); }
+	else { firstPerson.drawUsingBSP(&rootNode); }
 	glPopMatrix();
 }
