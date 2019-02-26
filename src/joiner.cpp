@@ -7,10 +7,6 @@ void Joiner::initialize() {
 	std::ifstream tree("bsp_tree.data");
 	rootNode = *readBinaryTree(&rootNode, tree);
 
-	std::cout << rootNode.splitter << std::endl;
-    printTree(&rootNode, "");
-    std::cout << std::endl;
-
 	wallCount = positionList.size() / 2;
 	wallArray = new Wall[wallCount];
 	for (int x = 0; x < positionList.size(); x += 2) {
@@ -39,6 +35,12 @@ void Joiner::update() {
 	if (input.checkKeyDown(SDLK_UP)) { cameraPosition += Vector2(cos(drawing.degreeToRadians(-cameraAngle)), sin(drawing.degreeToRadians(-cameraAngle))) * speed * timer.getTimeSeconds(); }
 	if (input.checkKeyDown(SDLK_DOWN)) { cameraPosition -= Vector2(cos(drawing.degreeToRadians(-cameraAngle)), sin(drawing.degreeToRadians(-cameraAngle))) * speed * timer.getTimeSeconds(); }
 
+	if (input.checkKeyPress(SDLK_RETURN)) { 
+		std::cout << rootNode.splitter << std::endl;
+    	printTree(&rootNode, "");
+    	std::cout << std::endl;
+	}
+	
 	firstPerson.update();
 }
 

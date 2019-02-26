@@ -44,6 +44,8 @@ void FirstPerson::draw(Wall* wallArray, int wallCount) {
 }
 
 void FirstPerson::drawWall(Wall wall) {
+	//Thanks Bisqwit (https://www.youtube.com/watch?v=HQYsFshbkYw)
+	
 	//Transform the vertexes relative to the player
 	float tx1 = wall.pointA.x - cameraPosition->x, ty1 = wall.pointA.y - cameraPosition->y;
 	float tx2 = wall.pointB.x - cameraPosition->x, ty2 = wall.pointB.y - cameraPosition->y;
